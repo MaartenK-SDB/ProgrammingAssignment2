@@ -30,7 +30,7 @@ cacheSolve <- function(x, ...) {
   }
   basematrix <- x$get() #Retrieves matrix
   m <- solve(basematrix, ...) #Calculates inverseMatrix
-  x$setiMatrix() #Sets the iMatrix to cache
+  x$setiMatrix(m) #Sets the iMatrix to cache
   m
 }
 
